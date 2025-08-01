@@ -1,1 +1,2 @@
-# Day04-Git-Branching-and-Workflow
+# Day 04 - Git Branching
+Belajar branching, merge, dan workflow Git
