@@ -1,0 +1,296 @@
+/* ========================
+   Base Reset & Typography
+   ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #222;
+  padding: 1rem;
+}
+
+#about {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+#core {
+  flex: 2;
+  min-width: 400px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: url("https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_1920,h_2856,al_c,q_90,enc_avif,quality_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  color: black;
+  text-shadow: none;
+  overflow: hidden;
+}
+
+#core p {
+  text-align: justify;
+}
+
+#core::before {
+  background: rgba(255, 255, 255, 0.6); /* Light overlay */
+}
+
+/* ========================
+   Layout Grid (3-Zone)
+   ======================== */
+#layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ========================
+   Header Styling
+   ======================== */
+header {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Skills & Projects Layout
+   ======================== */
+aside#skills,
+aside#projects {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+aside h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* ========================
+   Custom <details> Styling
+   ======================== */
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+}
+
+details[open] {
+  background-color: #eef6fc;
+  border-color: #007acc;
+  box-shadow: 0 0 0 2px #cce4f7;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::marker {
+  content: "";
+  display: none;
+}
+
+/* Custom disclosure arrow */
+summary {
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.5rem;
+  user-select: none;
+}
+
+summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  transition: transform 0.2s ease;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+details[open] summary::before {
+  content: "▼";
+}
+
+/* ========================
+   <ul> inside <details>
+   ======================== */
+details ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+details li {
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+details li:hover {
+  color: #222;
+  background: #f0f8ff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ========================
+   Articles in Tracks
+   ======================== */
+aside article h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+aside article p {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ========================
+   Footer Styling
+   ======================== */
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+footer li {
+  margin: 0.25rem 0;
+}
+
+footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Social Media Icons Styling
+   ============================ */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: var(--color-primary);
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.social-links li a:hover img {
+  transform: translateY(-4px) scale(1.1) rotate(-2deg);
+  filter: drop-shadow(0 0 6px var(--color-primary));
+}
+
+/* ========================
+   Responsive Layout
+   ======================== */
+@media (max-width: 768px) {
+  #layout {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
