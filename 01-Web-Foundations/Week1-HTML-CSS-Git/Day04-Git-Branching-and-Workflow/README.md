@@ -29,9 +29,13 @@
 
 ---
 
-## 🛠 Simulated Git Workflow (Solo Practice)
+## 🔭 Current Focus
 
-1. Create a new feature branch:
-   ```bash
-   git checkout -b feature/day04-branching
+- Week 1: Mastering Semantic HTML & CSS Grid Layouts
+- Week 2: Git Workflow Mastery
+- Status: `In Progress 🚧`
 
+## 📌 Next Up
+
+- JavaScript DOM Manipulation
+- React Fundamentals
