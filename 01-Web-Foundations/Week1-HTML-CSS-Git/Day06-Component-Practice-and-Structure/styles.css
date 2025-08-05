@@ -471,3 +471,40 @@ footer a:hover {
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+
+/* ========================
+   Utilities
+   ======================== */
+
+.btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: #fff;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+.mt-4 {
+  margin-top: var(--space-4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
